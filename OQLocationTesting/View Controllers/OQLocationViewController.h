@@ -1,0 +1,3 @@
+@interface OQLocationViewController : UIViewController
+
+@end

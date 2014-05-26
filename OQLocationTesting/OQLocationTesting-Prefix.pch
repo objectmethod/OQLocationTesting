@@ -14,4 +14,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+    #import <CoreLocation/CoreLocation.h>
+    #import "OQAppConstants.h"
+    #import "OQAppProperties.h"
+    #import "DLog.h"
 #endif

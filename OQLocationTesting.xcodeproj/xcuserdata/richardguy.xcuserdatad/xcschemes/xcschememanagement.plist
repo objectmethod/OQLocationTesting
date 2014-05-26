@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Mogenerator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>OQLocationTesting.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>5E1EB9F91933B86C0078384D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E6FBF3A1933B9860084D5EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

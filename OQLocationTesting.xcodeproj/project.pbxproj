@@ -6,15 +6,28 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5E6FBF3A1933B9860084D5EE /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E6FBF3B1933B9860084D5EE /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				5E6FBF3E1933B98A0084D5EE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		52A11F86B8884F81B1CDA5EB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE57D9C5FEA49DDA336ACEA /* libPods.a */; };
 		5E1EB9DE1933B86C0078384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DD1933B86C0078384D /* Foundation.framework */; };
 		5E1EB9E01933B86C0078384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DF1933B86C0078384D /* CoreGraphics.framework */; };
 		5E1EB9E21933B86C0078384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E11933B86C0078384D /* UIKit.framework */; };
 		5E1EB9E41933B86C0078384D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E31933B86C0078384D /* CoreData.framework */; };
 		5E1EB9EA1933B86C0078384D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EB9E81933B86C0078384D /* InfoPlist.strings */; };
 		5E1EB9EC1933B86C0078384D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9EB1933B86C0078384D /* main.m */; };
-		5E1EB9F01933B86C0078384D /* OQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */; };
-		5E1EB9F31933B86C0078384D /* OQLocationTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */; };
 		5E1EB9F51933B86C0078384D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EB9F41933B86C0078384D /* Images.xcassets */; };
 		5E1EB9FC1933B86C0078384D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9FB1933B86C0078384D /* XCTest.framework */; };
 		5E1EB9FD1933B86C0078384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DD1933B86C0078384D /* Foundation.framework */; };
@@ -22,6 +35,20 @@
 		5E1EB9FF1933B86C0078384D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E31933B86C0078384D /* CoreData.framework */; };
 		5E1EBA071933B86C0078384D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EBA051933B86C0078384D /* InfoPlist.strings */; };
 		5E1EBA091933B86C0078384D /* OQLocationTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EBA081933B86C0078384D /* OQLocationTestingTests.m */; };
+		5E6FBF331933B9270084D5EE /* OQAppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF2B1933B9270084D5EE /* OQAppConstants.m */; };
+		5E6FBF341933B9270084D5EE /* OQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF2D1933B9270084D5EE /* OQAppDelegate.m */; };
+		5E6FBF351933B9270084D5EE /* OQAppProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF2F1933B9270084D5EE /* OQAppProperties.m */; };
+		5E6FBF361933B9270084D5EE /* OQLocationTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF311933B9270084D5EE /* OQLocationTesting.xcdatamodeld */; };
+		5E6FBF391933B9760084D5EE /* OQDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF381933B9760084D5EE /* OQDataManager.m */; };
+		5E6FBF431933BA0E0084D5EE /* _OQLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF401933BA0E0084D5EE /* _OQLocation.m */; };
+		5E6FBF441933BA0E0084D5EE /* OQLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF421933BA0E0084D5EE /* OQLocation.m */; };
+		5E6FBF471933BA5E0084D5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6FBF461933BA5E0084D5EE /* Main.storyboard */; };
+		5E6FBF4D1933BAC70084D5EE /* OQLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF4A1933BAC70084D5EE /* OQLocationViewController.m */; };
+		5E6FBF4E1933BAC70084D5EE /* OQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF4C1933BAC70084D5EE /* OQLoginViewController.m */; };
+		5E6FBF531933BB010084D5EE /* OQLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF501933BB010084D5EE /* OQLocationManager.m */; };
+		5E6FBF541933BB010084D5EE /* OQLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF521933BB010084D5EE /* OQLoginController.m */; };
+		5E6FBF561933BB1A0084D5EE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6FBF551933BB1A0084D5EE /* CoreLocation.framework */; };
+		5E6FBF581933BB210084D5EE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6FBF571933BB210084D5EE /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +71,39 @@
 		5E1EB9E91933B86C0078384D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E1EB9EB1933B86C0078384D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E1EB9ED1933B86C0078384D /* OQLocationTesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OQLocationTesting-Prefix.pch"; sourceTree = "<group>"; };
-		5E1EB9EE1933B86C0078384D /* OQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OQAppDelegate.h; sourceTree = "<group>"; };
-		5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OQAppDelegate.m; sourceTree = "<group>"; };
-		5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OQLocationTesting.xcdatamodel; sourceTree = "<group>"; };
 		5E1EB9F41933B86C0078384D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E1EB9FA1933B86C0078384D /* OQLocationTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OQLocationTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1EB9FB1933B86C0078384D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5E1EBA041933B86C0078384D /* OQLocationTestingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OQLocationTestingTests-Info.plist"; sourceTree = "<group>"; };
 		5E1EBA061933B86C0078384D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E1EBA081933B86C0078384D /* OQLocationTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OQLocationTestingTests.m; sourceTree = "<group>"; };
+		5E6FBF2A1933B9270084D5EE /* OQAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQAppConstants.h; sourceTree = "<group>"; };
+		5E6FBF2B1933B9270084D5EE /* OQAppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQAppConstants.m; sourceTree = "<group>"; };
+		5E6FBF2C1933B9270084D5EE /* OQAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQAppDelegate.h; sourceTree = "<group>"; };
+		5E6FBF2D1933B9270084D5EE /* OQAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQAppDelegate.m; sourceTree = "<group>"; };
+		5E6FBF2E1933B9270084D5EE /* OQAppProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQAppProperties.h; sourceTree = "<group>"; };
+		5E6FBF2F1933B9270084D5EE /* OQAppProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQAppProperties.m; sourceTree = "<group>"; };
+		5E6FBF321933B9270084D5EE /* OQLocationTesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OQLocationTesting.xcdatamodel; sourceTree = "<group>"; };
+		5E6FBF371933B9760084D5EE /* OQDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQDataManager.h; sourceTree = "<group>"; };
+		5E6FBF381933B9760084D5EE /* OQDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQDataManager.m; sourceTree = "<group>"; };
+		5E6FBF3F1933BA0E0084D5EE /* _OQLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _OQLocation.h; sourceTree = "<group>"; };
+		5E6FBF401933BA0E0084D5EE /* _OQLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _OQLocation.m; sourceTree = "<group>"; };
+		5E6FBF411933BA0E0084D5EE /* OQLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLocation.h; sourceTree = "<group>"; };
+		5E6FBF421933BA0E0084D5EE /* OQLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLocation.m; sourceTree = "<group>"; };
+		5E6FBF461933BA5E0084D5EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5E6FBF491933BAC70084D5EE /* OQLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLocationViewController.h; sourceTree = "<group>"; };
+		5E6FBF4A1933BAC70084D5EE /* OQLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLocationViewController.m; sourceTree = "<group>"; };
+		5E6FBF4B1933BAC70084D5EE /* OQLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLoginViewController.h; sourceTree = "<group>"; };
+		5E6FBF4C1933BAC70084D5EE /* OQLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLoginViewController.m; sourceTree = "<group>"; };
+		5E6FBF4F1933BB010084D5EE /* OQLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLocationManager.h; sourceTree = "<group>"; };
+		5E6FBF501933BB010084D5EE /* OQLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLocationManager.m; sourceTree = "<group>"; };
+		5E6FBF511933BB010084D5EE /* OQLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLoginController.h; sourceTree = "<group>"; };
+		5E6FBF521933BB010084D5EE /* OQLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLoginController.m; sourceTree = "<group>"; };
+		5E6FBF551933BB1A0084D5EE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5E6FBF571933BB210084D5EE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5E6FBF591933C14E0084D5EE /* DLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLog.h; sourceTree = "<group>"; };
+		6AE57D9C5FEA49DDA336ACEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB8A24196CC47F28666A158 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +111,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6FBF581933BB210084D5EE /* MapKit.framework in Frameworks */,
+				5E6FBF561933BB1A0084D5EE /* CoreLocation.framework in Frameworks */,
 				5E1EB9E01933B86C0078384D /* CoreGraphics.framework in Frameworks */,
 				5E1EB9E41933B86C0078384D /* CoreData.framework in Frameworks */,
 				5E1EB9E21933B86C0078384D /* UIKit.framework in Frameworks */,
 				5E1EB9DE1933B86C0078384D /* Foundation.framework in Frameworks */,
+				52A11F86B8884F81B1CDA5EB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +142,7 @@
 				5E1EBA021933B86C0078384D /* OQLocationTestingTests */,
 				5E1EB9DC1933B86C0078384D /* Frameworks */,
 				5E1EB9DB1933B86C0078384D /* Products */,
+				7BB8A24196CC47F28666A158 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +158,14 @@
 		5E1EB9DC1933B86C0078384D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E6FBF571933BB210084D5EE /* MapKit.framework */,
+				5E6FBF551933BB1A0084D5EE /* CoreLocation.framework */,
 				5E1EB9DD1933B86C0078384D /* Foundation.framework */,
 				5E1EB9DF1933B86C0078384D /* CoreGraphics.framework */,
 				5E1EB9E11933B86C0078384D /* UIKit.framework */,
 				5E1EB9E31933B86C0078384D /* CoreData.framework */,
 				5E1EB9FB1933B86C0078384D /* XCTest.framework */,
+				6AE57D9C5FEA49DDA336ACEA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,11 +173,17 @@
 		5E1EB9E51933B86C0078384D /* OQLocationTesting */ = {
 			isa = PBXGroup;
 			children = (
-				5E1EB9EE1933B86C0078384D /* OQAppDelegate.h */,
-				5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */,
+				5E6FBF4F1933BB010084D5EE /* OQLocationManager.h */,
+				5E6FBF501933BB010084D5EE /* OQLocationManager.m */,
+				5E6FBF511933BB010084D5EE /* OQLoginController.h */,
+				5E6FBF521933BB010084D5EE /* OQLoginController.m */,
+				5E6FBF291933B9270084D5EE /* App */,
+				5E6FBF301933B9270084D5EE /* Model */,
+				5E6FBF451933BA5E0084D5EE /* UI */,
+				5E6FBF481933BAC70084D5EE /* View Controllers */,
 				5E1EB9F41933B86C0078384D /* Images.xcassets */,
-				5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */,
 				5E1EB9E61933B86C0078384D /* Supporting Files */,
+				5E6FBF591933C14E0084D5EE /* DLog.h */,
 			);
 			path = OQLocationTesting;
 			sourceTree = "<group>";
@@ -153,6 +217,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5E6FBF291933B9270084D5EE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FBF2A1933B9270084D5EE /* OQAppConstants.h */,
+				5E6FBF2B1933B9270084D5EE /* OQAppConstants.m */,
+				5E6FBF2C1933B9270084D5EE /* OQAppDelegate.h */,
+				5E6FBF2D1933B9270084D5EE /* OQAppDelegate.m */,
+				5E6FBF2E1933B9270084D5EE /* OQAppProperties.h */,
+				5E6FBF2F1933B9270084D5EE /* OQAppProperties.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5E6FBF301933B9270084D5EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FBF3F1933BA0E0084D5EE /* _OQLocation.h */,
+				5E6FBF401933BA0E0084D5EE /* _OQLocation.m */,
+				5E6FBF411933BA0E0084D5EE /* OQLocation.h */,
+				5E6FBF421933BA0E0084D5EE /* OQLocation.m */,
+				5E6FBF371933B9760084D5EE /* OQDataManager.h */,
+				5E6FBF381933B9760084D5EE /* OQDataManager.m */,
+				5E6FBF311933B9270084D5EE /* OQLocationTesting.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E6FBF451933BA5E0084D5EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FBF461933BA5E0084D5EE /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5E6FBF481933BAC70084D5EE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FBF491933BAC70084D5EE /* OQLocationViewController.h */,
+				5E6FBF4A1933BAC70084D5EE /* OQLocationViewController.m */,
+				5E6FBF4B1933BAC70084D5EE /* OQLoginViewController.h */,
+				5E6FBF4C1933BAC70084D5EE /* OQLoginViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E1EBA0C1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTesting" */;
 			buildPhases = (
+				A3920434E3044C7A94D15FCA /* Check Pods Manifest.lock */,
 				5E1EB9D61933B86C0078384D /* Sources */,
 				5E1EB9D71933B86C0078384D /* Frameworks */,
 				5E1EB9D81933B86C0078384D /* Resources */,
+				711C5A90DC1D45EC8B63BD0F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +313,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = OQ;
 				TargetAttributes = {
+					5E1EB9D91933B86C0078384D = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					5E1EB9F91933B86C0078384D = {
 						TestTargetID = 5E1EB9D91933B86C0078384D;
 					};
@@ -220,6 +339,7 @@
 			targets = (
 				5E1EB9D91933B86C0078384D /* OQLocationTesting */,
 				5E1EB9F91933B86C0078384D /* OQLocationTestingTests */,
+				5E6FBF3A1933B9860084D5EE /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6FBF471933BA5E0084D5EE /* Main.storyboard in Resources */,
 				5E1EB9EA1933B86C0078384D /* InfoPlist.strings in Resources */,
 				5E1EB9F51933B86C0078384D /* Images.xcassets in Resources */,
 			);
@@ -244,14 +365,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E6FBF3E1933B98A0084D5EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m OQLocationTesting/Model/OQLocationTesting.xcdatamodeld -O OQLocationTesting/Model --template-var arc=true";
+		};
+		711C5A90DC1D45EC8B63BD0F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3920434E3044C7A94D15FCA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E1EB9D61933B86C0078384D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1EB9F31933B86C0078384D /* OQLocationTesting.xcdatamodeld in Sources */,
-				5E1EB9F01933B86C0078384D /* OQAppDelegate.m in Sources */,
+				5E6FBF441933BA0E0084D5EE /* OQLocation.m in Sources */,
+				5E6FBF341933B9270084D5EE /* OQAppDelegate.m in Sources */,
+				5E6FBF4E1933BAC70084D5EE /* OQLoginViewController.m in Sources */,
+				5E6FBF531933BB010084D5EE /* OQLocationManager.m in Sources */,
 				5E1EB9EC1933B86C0078384D /* main.m in Sources */,
+				5E6FBF351933B9270084D5EE /* OQAppProperties.m in Sources */,
+				5E6FBF331933B9270084D5EE /* OQAppConstants.m in Sources */,
+				5E6FBF4D1933BAC70084D5EE /* OQLocationViewController.m in Sources */,
+				5E6FBF361933B9270084D5EE /* OQLocationTesting.xcdatamodeld in Sources */,
+				5E6FBF391933B9760084D5EE /* OQDataManager.m in Sources */,
+				5E6FBF431933BA0E0084D5EE /* _OQLocation.m in Sources */,
+				5E6FBF541933BB010084D5EE /* OQLoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +541,7 @@
 		};
 		5E1EBA0D1933B86D0078384D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB8A24196CC47F28666A158 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -378,6 +555,7 @@
 		};
 		5E1EBA0E1933B86D0078384D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB8A24196CC47F28666A158 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -429,6 +607,20 @@
 			};
 			name = Release;
 		};
+		5E6FBF3C1933B9860084D5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E6FBF3D1933B9860084D5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,6 +640,7 @@
 				5E1EBA0E1933B86D0078384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E1EBA0F1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -456,16 +649,25 @@
 				5E1EBA111933B86D0078384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E6FBF3B1933B9860084D5EE /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6FBF3C1933B9860084D5EE /* Debug */,
+				5E6FBF3D1933B9860084D5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */ = {
+		5E6FBF311933B9270084D5EE /* OQLocationTesting.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */,
+				5E6FBF321933B9270084D5EE /* OQLocationTesting.xcdatamodel */,
 			);
-			currentVersion = 5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */;
+			currentVersion = 5E6FBF321933B9270084D5EE /* OQLocationTesting.xcdatamodel */;
 			path = OQLocationTesting.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
