@@ -1,5 +1,6 @@
 #import "OQLocationManager.h"
 #import "OQLocation.h"
+#import "OQDataManager.h"
 
 @interface OQLocationManager () <CLLocationManagerDelegate>
 
@@ -64,6 +65,8 @@
         float longitude = location.coordinate.longitude;
         [OQLocation locationWithLatitude:latitude longitude:longitude];
     }
+    
+    [[OQDataManager sharedInstance] saveContext];
     
     if (self.canDeferLocationUpdates) {
         DLog(@"Deferring location updates");

@@ -13,6 +13,7 @@
     OQLocation *location = [OQLocation insertInManagedObjectContext:context];
     location.latitudeValue = latitude;
     location.longitudeValue = longitude;
+    location.created_at = [NSDate date];
     return location;
 }
 

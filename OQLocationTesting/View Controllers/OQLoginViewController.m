@@ -1,10 +1,11 @@
 #import "OQLoginViewController.h"
 #import "OQLoginController.h"
 #import "MBProgressHUD.h"
-#import "OQLocationViewController.h"
+#import "OQMapViewController.h"
 
 @interface OQLoginViewController () <NSURLSessionDelegate>
 
+@property (strong, nonatomic) MBProgressHUD *hud;
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 
@@ -13,22 +14,26 @@
 @implementation OQLoginViewController
 
 - (IBAction)login:(id)sender {
+    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    [self loginTo1Q];
+    [self showMenu];
+}
+
+- (void) loginTo1Q {
     NSString *username = self.username.text;
     NSString *password = self.password.text;
     
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
     [[OQLoginController sharedInstance] loginWithUsername:username password:password success:^() {
-        [hud hide:YES];
-        [self showLocation];
+        [self showMenu];
     } failure:^(NSError *error) {
         [[[UIAlertView alloc] initWithTitle:@"Error Logging In" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
-        [hud hide:YES];
+        [self.hud hide:YES];
     }];
 }
 
-- (void) showLocation {
-    [self performSegueWithIdentifier:OQ_SHOW_LOCATION_SEGUE_IDENTIFIER sender:self];
+- (void) showMenu {
+    [self.hud hide:YES];
+    [self performSegueWithIdentifier:OQ_SHOW_MENU_SEGUE_IDENTIFIER sender:self];
 }
 
 @end
