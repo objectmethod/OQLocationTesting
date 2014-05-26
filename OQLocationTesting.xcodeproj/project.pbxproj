@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E1EB9DE1933B86C0078384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DD1933B86C0078384D /* Foundation.framework */; };
+		5E1EB9E01933B86C0078384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DF1933B86C0078384D /* CoreGraphics.framework */; };
+		5E1EB9E21933B86C0078384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E11933B86C0078384D /* UIKit.framework */; };
+		5E1EB9E41933B86C0078384D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E31933B86C0078384D /* CoreData.framework */; };
+		5E1EB9EA1933B86C0078384D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EB9E81933B86C0078384D /* InfoPlist.strings */; };
+		5E1EB9EC1933B86C0078384D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9EB1933B86C0078384D /* main.m */; };
+		5E1EB9F01933B86C0078384D /* OQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */; };
+		5E1EB9F31933B86C0078384D /* OQLocationTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */; };
+		5E1EB9F51933B86C0078384D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EB9F41933B86C0078384D /* Images.xcassets */; };
+		5E1EB9FC1933B86C0078384D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9FB1933B86C0078384D /* XCTest.framework */; };
+		5E1EB9FD1933B86C0078384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9DD1933B86C0078384D /* Foundation.framework */; };
+		5E1EB9FE1933B86C0078384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E11933B86C0078384D /* UIKit.framework */; };
+		5E1EB9FF1933B86C0078384D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1EB9E31933B86C0078384D /* CoreData.framework */; };
+		5E1EBA071933B86C0078384D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E1EBA051933B86C0078384D /* InfoPlist.strings */; };
+		5E1EBA091933B86C0078384D /* OQLocationTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1EBA081933B86C0078384D /* OQLocationTestingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E1EBA001933B86C0078384D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E1EB9D21933B86C0078384D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E1EB9D91933B86C0078384D;
+			remoteInfo = OQLocationTesting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E1EB9DA1933B86C0078384D /* OQLocationTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OQLocationTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1EB9DD1933B86C0078384D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E1EB9DF1933B86C0078384D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E1EB9E11933B86C0078384D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E1EB9E31933B86C0078384D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5E1EB9E71933B86C0078384D /* OQLocationTesting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OQLocationTesting-Info.plist"; sourceTree = "<group>"; };
+		5E1EB9E91933B86C0078384D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E1EB9EB1933B86C0078384D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E1EB9ED1933B86C0078384D /* OQLocationTesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OQLocationTesting-Prefix.pch"; sourceTree = "<group>"; };
+		5E1EB9EE1933B86C0078384D /* OQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OQAppDelegate.h; sourceTree = "<group>"; };
+		5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OQAppDelegate.m; sourceTree = "<group>"; };
+		5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OQLocationTesting.xcdatamodel; sourceTree = "<group>"; };
+		5E1EB9F41933B86C0078384D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E1EB9FA1933B86C0078384D /* OQLocationTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OQLocationTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1EB9FB1933B86C0078384D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E1EBA041933B86C0078384D /* OQLocationTestingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OQLocationTestingTests-Info.plist"; sourceTree = "<group>"; };
+		5E1EBA061933B86C0078384D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E1EBA081933B86C0078384D /* OQLocationTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OQLocationTestingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E1EB9D71933B86C0078384D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EB9E01933B86C0078384D /* CoreGraphics.framework in Frameworks */,
+				5E1EB9E41933B86C0078384D /* CoreData.framework in Frameworks */,
+				5E1EB9E21933B86C0078384D /* UIKit.framework in Frameworks */,
+				5E1EB9DE1933B86C0078384D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1EB9F71933B86C0078384D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EB9FC1933B86C0078384D /* XCTest.framework in Frameworks */,
+				5E1EB9FF1933B86C0078384D /* CoreData.framework in Frameworks */,
+				5E1EB9FE1933B86C0078384D /* UIKit.framework in Frameworks */,
+				5E1EB9FD1933B86C0078384D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E1EB9D11933B86C0078384D = {
+			isa = PBXGroup;
+			children = (
+				5E1EB9E51933B86C0078384D /* OQLocationTesting */,
+				5E1EBA021933B86C0078384D /* OQLocationTestingTests */,
+				5E1EB9DC1933B86C0078384D /* Frameworks */,
+				5E1EB9DB1933B86C0078384D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E1EB9DB1933B86C0078384D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EB9DA1933B86C0078384D /* OQLocationTesting.app */,
+				5E1EB9FA1933B86C0078384D /* OQLocationTestingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E1EB9DC1933B86C0078384D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EB9DD1933B86C0078384D /* Foundation.framework */,
+				5E1EB9DF1933B86C0078384D /* CoreGraphics.framework */,
+				5E1EB9E11933B86C0078384D /* UIKit.framework */,
+				5E1EB9E31933B86C0078384D /* CoreData.framework */,
+				5E1EB9FB1933B86C0078384D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E1EB9E51933B86C0078384D /* OQLocationTesting */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EB9EE1933B86C0078384D /* OQAppDelegate.h */,
+				5E1EB9EF1933B86C0078384D /* OQAppDelegate.m */,
+				5E1EB9F41933B86C0078384D /* Images.xcassets */,
+				5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */,
+				5E1EB9E61933B86C0078384D /* Supporting Files */,
+			);
+			path = OQLocationTesting;
+			sourceTree = "<group>";
+		};
+		5E1EB9E61933B86C0078384D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EB9E71933B86C0078384D /* OQLocationTesting-Info.plist */,
+				5E1EB9E81933B86C0078384D /* InfoPlist.strings */,
+				5E1EB9EB1933B86C0078384D /* main.m */,
+				5E1EB9ED1933B86C0078384D /* OQLocationTesting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E1EBA021933B86C0078384D /* OQLocationTestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EBA081933B86C0078384D /* OQLocationTestingTests.m */,
+				5E1EBA031933B86C0078384D /* Supporting Files */,
+			);
+			path = OQLocationTestingTests;
+			sourceTree = "<group>";
+		};
+		5E1EBA031933B86C0078384D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E1EBA041933B86C0078384D /* OQLocationTestingTests-Info.plist */,
+				5E1EBA051933B86C0078384D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E1EB9D91933B86C0078384D /* OQLocationTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1EBA0C1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTesting" */;
+			buildPhases = (
+				5E1EB9D61933B86C0078384D /* Sources */,
+				5E1EB9D71933B86C0078384D /* Frameworks */,
+				5E1EB9D81933B86C0078384D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OQLocationTesting;
+			productName = OQLocationTesting;
+			productReference = 5E1EB9DA1933B86C0078384D /* OQLocationTesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E1EB9F91933B86C0078384D /* OQLocationTestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1EBA0F1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTestingTests" */;
+			buildPhases = (
+				5E1EB9F61933B86C0078384D /* Sources */,
+				5E1EB9F71933B86C0078384D /* Frameworks */,
+				5E1EB9F81933B86C0078384D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E1EBA011933B86C0078384D /* PBXTargetDependency */,
+			);
+			name = OQLocationTestingTests;
+			productName = OQLocationTestingTests;
+			productReference = 5E1EB9FA1933B86C0078384D /* OQLocationTestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E1EB9D21933B86C0078384D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OQ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = OQ;
+				TargetAttributes = {
+					5E1EB9F91933B86C0078384D = {
+						TestTargetID = 5E1EB9D91933B86C0078384D;
+					};
+				};
+			};
+			buildConfigurationList = 5E1EB9D51933B86C0078384D /* Build configuration list for PBXProject "OQLocationTesting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E1EB9D11933B86C0078384D;
+			productRefGroup = 5E1EB9DB1933B86C0078384D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E1EB9D91933B86C0078384D /* OQLocationTesting */,
+				5E1EB9F91933B86C0078384D /* OQLocationTestingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E1EB9D81933B86C0078384D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EB9EA1933B86C0078384D /* InfoPlist.strings in Resources */,
+				5E1EB9F51933B86C0078384D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1EB9F81933B86C0078384D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EBA071933B86C0078384D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E1EB9D61933B86C0078384D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EB9F31933B86C0078384D /* OQLocationTesting.xcdatamodeld in Sources */,
+				5E1EB9F01933B86C0078384D /* OQAppDelegate.m in Sources */,
+				5E1EB9EC1933B86C0078384D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1EB9F61933B86C0078384D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1EBA091933B86C0078384D /* OQLocationTestingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E1EBA011933B86C0078384D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E1EB9D91933B86C0078384D /* OQLocationTesting */;
+			targetProxy = 5E1EBA001933B86C0078384D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E1EB9E81933B86C0078384D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E1EB9E91933B86C0078384D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E1EBA051933B86C0078384D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E1EBA061933B86C0078384D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E1EBA0A1933B86D0078384D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E1EBA0B1933B86D0078384D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E1EBA0D1933B86D0078384D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OQLocationTesting/OQLocationTesting-Prefix.pch";
+				INFOPLIST_FILE = "OQLocationTesting/OQLocationTesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E1EBA0E1933B86D0078384D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OQLocationTesting/OQLocationTesting-Prefix.pch";
+				INFOPLIST_FILE = "OQLocationTesting/OQLocationTesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E1EBA101933B86D0078384D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OQLocationTesting.app/OQLocationTesting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OQLocationTesting/OQLocationTesting-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OQLocationTestingTests/OQLocationTestingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E1EBA111933B86D0078384D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OQLocationTesting.app/OQLocationTesting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OQLocationTesting/OQLocationTesting-Prefix.pch";
+				INFOPLIST_FILE = "OQLocationTestingTests/OQLocationTestingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E1EB9D51933B86C0078384D /* Build configuration list for PBXProject "OQLocationTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1EBA0A1933B86D0078384D /* Debug */,
+				5E1EBA0B1933B86D0078384D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1EBA0C1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1EBA0D1933B86D0078384D /* Debug */,
+				5E1EBA0E1933B86D0078384D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E1EBA0F1933B86D0078384D /* Build configuration list for PBXNativeTarget "OQLocationTestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1EBA101933B86D0078384D /* Debug */,
+				5E1EBA111933B86D0078384D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E1EB9F11933B86C0078384D /* OQLocationTesting.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */,
+			);
+			currentVersion = 5E1EB9F21933B86C0078384D /* OQLocationTesting.xcdatamodel */;
+			path = OQLocationTesting.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5E1EB9D21933B86C0078384D /* Project object */;
+}
