@@ -19,20 +19,29 @@
                                  @"password" : self.password
                                  };
     
-    [OQNetworkManager postParameters:parameters toEndPoint:OQ_AUTHENTICATE_END_POINT_URL success:^(id responseObject) {
-        [self storeAuthenticationTokenInKeychain:responseObject];
+    [[OQNetworkManager sharedInstance] postParameters:parameters toEndPoint:OQ_AUTHENTICATE_END_POINT_URL success:^(id responseObject) {
+        [self handleResponse:responseObject];
         success();
     } failure:^(NSError *error) {
         failure(error);
     }];
 }
 
-- (void) storeAuthenticationTokenInKeychain:(id) responseObject {
+- (void) handleResponse:(id) responseObject {
     self.authenticationToken = [responseObject objectForKey:OQ_AUTH_TOKEN_KEY];
     self.userID = [responseObject objectForKey:OQ_USER_ID_KEY];
     
+    [self storeAuthenticationToken:self.authenticationToken inKeychainForAccount:self.userID];
+    [self setNetworkManagerAuthenticationToken:self.authenticationToken];
+}
+
+- (void) storeAuthenticationToken:(NSString*)authenticationToken inKeychainForAccount:(NSString*)account {
     [[NSUserDefaults standardUserDefaults] setValue:self.userID forKey:OQ_USER_DEFAULTS_KEY_USERNAME];
     [SSKeychain setPassword:self.authenticationToken forService:OQ_APP_TITLE account:self.userID];
+}
+
+- (void) setNetworkManagerAuthenticationToken:(NSString*)authenticationToken {
+    [OQNetworkManager sharedInstance].authenticationToken = authenticationToken;
 }
 
 - (void)authenticateWithUsername:(NSString *)username password:(NSString *)password success:(void (^)())success failure:(void (^)(NSError *))failure {
@@ -43,6 +52,7 @@
 
 - (void)logout {
     [SSKeychain deletePasswordForService:OQ_APP_TITLE account:self.userID];
+    [OQNetworkManager sharedInstance].authenticationToken = nil;
 }
 
 @end

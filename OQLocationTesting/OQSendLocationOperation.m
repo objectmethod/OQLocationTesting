@@ -1,8 +1,9 @@
-#import "OQSendLocationsOperation.h"
+#import "OQSendLocationOperation.h"
 #import "OQLocation.h"
 #import "OQNetworkManager.h"
+#import "OQAuthenticationManager.h"
 
-@implementation OQSendLocationsOperation
+@implementation OQSendLocationOperation
 
 - (void)main {
     @autoreleasepool {
@@ -20,7 +21,10 @@
                                      @"longitude" : location.longitude
                                      };
         
-        [OQNetworkManager postParameters:parameters toEndPoint:OQ_LOCATION_END_POINT_URL success:^(id responseObject) {
+        NSString *userID = [[OQAuthenticationManager sharedInstance] userID];
+        NSString *endPoint = [NSString stringWithFormat:OQ_LOCATION_END_POINT_URL, userID];
+        
+        [[OQNetworkManager sharedInstance] postParameters:parameters toEndPoint:endPoint success:^(id responseObject) {
             DLog(@"sent location: %@", responseObject);
             [location markAsSent];
         } failure:^(NSError *error) {

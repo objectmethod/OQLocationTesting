@@ -1,5 +1,6 @@
 #import "OQMenuViewController.h"
 #import "OQAuthenticationManager.h"
+#import "OQLocationManager.h"
 
 @interface OQMenuViewController ()
 
@@ -11,6 +12,8 @@
     [super viewDidLoad];
     
     self.navigationItem.hidesBackButton = YES;
+    
+    [[OQLocationManager sharedInstance] startUpdatingLocation];
 }
 
 - (IBAction)logout:(id)sender {

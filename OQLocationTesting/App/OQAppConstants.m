@@ -1,7 +1,8 @@
 #import "OQAppConstants.h"
 
-NSString * const OQ_AUTHENTICATE_END_POINT_URL = @"http://test.1q.com/user/authenticate";
-NSString * const OQ_LOCATION_END_POINT_URL = @"http://test.1q.com/user/537d1a11e4b0b0d4ce079020/location";
+NSString * const OQ_HOST_URL = @"http://test.1q.com";
+NSString * const OQ_AUTHENTICATE_END_POINT_URL = @"/user/authenticate";
+NSString * const OQ_LOCATION_END_POINT_URL = @"/user/%@/location";
 
 NSString * const OQ_AUTH_TOKEN_KEY = @"Auth-Token";
 NSString * const OQ_USER_ID_KEY = @"_id";

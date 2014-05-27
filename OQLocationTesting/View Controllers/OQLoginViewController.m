@@ -15,8 +15,8 @@
 
 - (IBAction)login:(id)sender {
     self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    [self loginTo1Q];
-    [self showMenu];
+    [self loginTo1Q];
+//    [self showMenu];
 }
 
 - (void) loginTo1Q {

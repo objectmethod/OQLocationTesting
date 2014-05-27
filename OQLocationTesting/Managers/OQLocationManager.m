@@ -1,6 +1,7 @@
 #import "OQLocationManager.h"
 #import "OQLocation.h"
 #import "OQDataManager.h"
+#import "OQSendLocationOperation.h"
 
 @interface OQLocationManager () <CLLocationManagerDelegate>
 
@@ -68,6 +69,11 @@
     }
 }
 
+- (void) sendMostRecentLocation {
+    OQSendLocationOperation *operation = [[OQSendLocationOperation alloc] init];
+    [operation start];
+}
+
 #pragma mark - Helpers
 
 - (BOOL) locationServicesEnabled {
@@ -87,6 +93,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     [self saveLocations:locations];
     [self deferLocationUpdatesIfPossible];
+    [self sendMostRecentLocation];
 }
 
 - (void) locationManager:(CLLocationManager *)manager didFinishDeferredUpdatesWithError:(NSError *)error {

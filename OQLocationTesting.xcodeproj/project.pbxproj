@@ -50,7 +50,7 @@
 		5E6FBF5C1933C8410084D5EE /* OQLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF5B1933C8410084D5EE /* OQLocationsViewController.m */; };
 		5E6FBF5F1933C8BE0084D5EE /* OQMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF5E1933C8BE0084D5EE /* OQMenuViewController.m */; };
 		5E6FBF641933CAB00084D5EE /* OQLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF631933CAB00084D5EE /* OQLocationCell.m */; };
-		5E6FBF671933FF5F0084D5EE /* OQSendLocationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF661933FF5F0084D5EE /* OQSendLocationsOperation.m */; };
+		5E6FBF671933FF5F0084D5EE /* OQSendLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6FBF661933FF5F0084D5EE /* OQSendLocationOperation.m */; };
 		5EE3454E1934D2F600DDD261 /* OQAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345491934D2F600DDD261 /* OQAuthenticationManager.m */; };
 		5EE3454F1934D2F600DDD261 /* OQLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3454B1934D2F600DDD261 /* OQLocationManager.m */; };
 		5EE345501934D2F600DDD261 /* OQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3454D1934D2F600DDD261 /* OQNetworkManager.m */; };
@@ -115,8 +115,8 @@
 		5E6FBF5E1933C8BE0084D5EE /* OQMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQMenuViewController.m; sourceTree = "<group>"; };
 		5E6FBF621933CAB00084D5EE /* OQLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLocationCell.h; sourceTree = "<group>"; };
 		5E6FBF631933CAB00084D5EE /* OQLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLocationCell.m; sourceTree = "<group>"; };
-		5E6FBF651933FF5F0084D5EE /* OQSendLocationsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQSendLocationsOperation.h; sourceTree = "<group>"; };
-		5E6FBF661933FF5F0084D5EE /* OQSendLocationsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQSendLocationsOperation.m; sourceTree = "<group>"; };
+		5E6FBF651933FF5F0084D5EE /* OQSendLocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQSendLocationOperation.h; sourceTree = "<group>"; };
+		5E6FBF661933FF5F0084D5EE /* OQSendLocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQSendLocationOperation.m; sourceTree = "<group>"; };
 		5EE345481934D2F600DDD261 /* OQAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQAuthenticationManager.h; sourceTree = "<group>"; };
 		5EE345491934D2F600DDD261 /* OQAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQAuthenticationManager.m; sourceTree = "<group>"; };
 		5EE3454A1934D2F600DDD261 /* OQLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLocationManager.h; sourceTree = "<group>"; };
@@ -213,8 +213,8 @@
 				5E6FBF451933BA5E0084D5EE /* UI */,
 				5E6FBF481933BAC70084D5EE /* View Controllers */,
 				5E1EB9F41933B86C0078384D /* Images.xcassets */,
-				5E6FBF651933FF5F0084D5EE /* OQSendLocationsOperation.h */,
-				5E6FBF661933FF5F0084D5EE /* OQSendLocationsOperation.m */,
+				5E6FBF651933FF5F0084D5EE /* OQSendLocationOperation.h */,
+				5E6FBF661933FF5F0084D5EE /* OQSendLocationOperation.m */,
 			);
 			path = OQLocationTesting;
 			sourceTree = "<group>";
@@ -503,7 +503,7 @@
 				5EE345611934DBF000DDD261 /* _OQLog.m in Sources */,
 				5E6FBF641933CAB00084D5EE /* OQLocationCell.m in Sources */,
 				5E6FBF361933B9270084D5EE /* OQLocationTesting.xcdatamodeld in Sources */,
-				5E6FBF671933FF5F0084D5EE /* OQSendLocationsOperation.m in Sources */,
+				5E6FBF671933FF5F0084D5EE /* OQSendLocationOperation.m in Sources */,
 				5EE3455C1934DBC500DDD261 /* OQLogsViewController.m in Sources */,
 				5E6FBF391933B9760084D5EE /* OQDataManager.m in Sources */,
 				5EE345681934DD2400DDD261 /* OQLogViewController.m in Sources */,

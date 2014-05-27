@@ -1,3 +1,4 @@
+extern NSString * const OQ_HOST_URL;
 extern NSString * const OQ_AUTHENTICATE_END_POINT_URL;
 extern NSString * const OQ_LOCATION_END_POINT_URL;
 
