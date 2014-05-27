@@ -13,7 +13,7 @@
     return sharedInstance;
 }
 
-- (void)login:(void (^)())success failure:(void (^)(NSError *))failure {
+- (void)authenticate:(void (^)())success failure:(void (^)(NSError *))failure {
     NSDictionary *parameters = @{
                                  @"username" : self.username,
                                  @"password" : self.password
@@ -35,10 +35,10 @@
     [SSKeychain setPassword:self.authenticationToken forService:OQ_APP_TITLE account:self.userID];
 }
 
-- (void)loginWithUsername:(NSString *)username password:(NSString *)password success:(void (^)())success failure:(void (^)(NSError *))failure {
+- (void)authenticateWithUsername:(NSString *)username password:(NSString *)password success:(void (^)())success failure:(void (^)(NSError *))failure {
     self.username = username;
     self.password = password;
-    [self login:success failure:failure];
+    [self authenticate:success failure:failure];
 }
 
 @end

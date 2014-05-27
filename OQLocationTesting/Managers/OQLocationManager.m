@@ -60,7 +60,9 @@
 }
 
 - (void) deferLocationUpdatesIfPossible {
-    if (self.canDeferLocationUpdates) {
+    BOOL isAppActive = [[UIApplication sharedApplication] applicationState] == UIApplicationStateActive;
+    
+    if (self.canDeferLocationUpdates && !isAppActive) {
         DLog(@"Deferring location updates");
         [self.locationManager allowDeferredLocationUpdatesUntilTraveled:OQ_DISTANCE_TO_DEFER_LOCATION_UPDATE_IN_METERS timeout:CLTimeIntervalMax];
     }

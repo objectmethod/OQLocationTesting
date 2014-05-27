@@ -54,6 +54,12 @@
 		5EE3454E1934D2F600DDD261 /* OQAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345491934D2F600DDD261 /* OQAuthenticationManager.m */; };
 		5EE3454F1934D2F600DDD261 /* OQLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3454B1934D2F600DDD261 /* OQLocationManager.m */; };
 		5EE345501934D2F600DDD261 /* OQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3454D1934D2F600DDD261 /* OQNetworkManager.m */; };
+		5EE345591934D68A00DDD261 /* OQLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345581934D68A00DDD261 /* OQLogManager.m */; };
+		5EE3455C1934DBC500DDD261 /* OQLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3455B1934DBC500DDD261 /* OQLogsViewController.m */; };
+		5EE345611934DBF000DDD261 /* _OQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3455E1934DBF000DDD261 /* _OQLog.m */; };
+		5EE345621934DBF000DDD261 /* OQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345601934DBF000DDD261 /* OQLog.m */; };
+		5EE345651934DC2500DDD261 /* OQLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345641934DC2500DDD261 /* OQLogCell.m */; };
+		5EE345681934DD2400DDD261 /* OQLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345671934DD2400DDD261 /* OQLogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +123,18 @@
 		5EE3454B1934D2F600DDD261 /* OQLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLocationManager.m; sourceTree = "<group>"; };
 		5EE3454C1934D2F600DDD261 /* OQNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQNetworkManager.h; sourceTree = "<group>"; };
 		5EE3454D1934D2F600DDD261 /* OQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQNetworkManager.m; sourceTree = "<group>"; };
+		5EE345571934D68A00DDD261 /* OQLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLogManager.h; sourceTree = "<group>"; };
+		5EE345581934D68A00DDD261 /* OQLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogManager.m; sourceTree = "<group>"; };
+		5EE3455A1934DBC500DDD261 /* OQLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLogsViewController.h; sourceTree = "<group>"; };
+		5EE3455B1934DBC500DDD261 /* OQLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogsViewController.m; sourceTree = "<group>"; };
+		5EE3455D1934DBF000DDD261 /* _OQLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _OQLog.h; sourceTree = "<group>"; };
+		5EE3455E1934DBF000DDD261 /* _OQLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _OQLog.m; sourceTree = "<group>"; };
+		5EE3455F1934DBF000DDD261 /* OQLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLog.h; sourceTree = "<group>"; };
+		5EE345601934DBF000DDD261 /* OQLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLog.m; sourceTree = "<group>"; };
+		5EE345631934DC2500DDD261 /* OQLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLogCell.h; sourceTree = "<group>"; };
+		5EE345641934DC2500DDD261 /* OQLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogCell.m; sourceTree = "<group>"; };
+		5EE345661934DD2400DDD261 /* OQLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLogViewController.h; sourceTree = "<group>"; };
+		5EE345671934DD2400DDD261 /* OQLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogViewController.m; sourceTree = "<group>"; };
 		6AE57D9C5FEA49DDA336ACEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB8A24196CC47F28666A158 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,6 +266,10 @@
 		5E6FBF301933B9270084D5EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5EE3455D1934DBF000DDD261 /* _OQLog.h */,
+				5EE3455E1934DBF000DDD261 /* _OQLog.m */,
+				5EE3455F1934DBF000DDD261 /* OQLog.h */,
+				5EE345601934DBF000DDD261 /* OQLog.m */,
 				5E6FBF3F1933BA0E0084D5EE /* _OQLocation.h */,
 				5E6FBF401933BA0E0084D5EE /* _OQLocation.m */,
 				5E6FBF411933BA0E0084D5EE /* OQLocation.h */,
@@ -278,6 +300,10 @@
 				5E6FBF5B1933C8410084D5EE /* OQLocationsViewController.m */,
 				5E6FBF5D1933C8BE0084D5EE /* OQMenuViewController.h */,
 				5E6FBF5E1933C8BE0084D5EE /* OQMenuViewController.m */,
+				5EE3455A1934DBC500DDD261 /* OQLogsViewController.h */,
+				5EE3455B1934DBC500DDD261 /* OQLogsViewController.m */,
+				5EE345661934DD2400DDD261 /* OQLogViewController.h */,
+				5EE345671934DD2400DDD261 /* OQLogViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -287,6 +313,8 @@
 			children = (
 				5E6FBF621933CAB00084D5EE /* OQLocationCell.h */,
 				5E6FBF631933CAB00084D5EE /* OQLocationCell.m */,
+				5EE345631934DC2500DDD261 /* OQLogCell.h */,
+				5EE345641934DC2500DDD261 /* OQLogCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -300,6 +328,8 @@
 				5EE3454B1934D2F600DDD261 /* OQLocationManager.m */,
 				5EE3454C1934D2F600DDD261 /* OQNetworkManager.h */,
 				5EE3454D1934D2F600DDD261 /* OQNetworkManager.m */,
+				5EE345571934D68A00DDD261 /* OQLogManager.h */,
+				5EE345581934D68A00DDD261 /* OQLogManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -457,22 +487,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE345621934DBF000DDD261 /* OQLog.m in Sources */,
 				5E6FBF441933BA0E0084D5EE /* OQLocation.m in Sources */,
 				5E6FBF341933B9270084D5EE /* OQAppDelegate.m in Sources */,
 				5EE3454F1934D2F600DDD261 /* OQLocationManager.m in Sources */,
 				5E6FBF4E1933BAC70084D5EE /* OQLoginViewController.m in Sources */,
 				5E1EB9EC1933B86C0078384D /* main.m in Sources */,
+				5EE345651934DC2500DDD261 /* OQLogCell.m in Sources */,
 				5E6FBF5F1933C8BE0084D5EE /* OQMenuViewController.m in Sources */,
 				5E6FBF351933B9270084D5EE /* OQAppProperties.m in Sources */,
 				5E6FBF331933B9270084D5EE /* OQAppConstants.m in Sources */,
 				5E6FBF4D1933BAC70084D5EE /* OQMapViewController.m in Sources */,
 				5EE3454E1934D2F600DDD261 /* OQAuthenticationManager.m in Sources */,
 				5E6FBF5C1933C8410084D5EE /* OQLocationsViewController.m in Sources */,
+				5EE345611934DBF000DDD261 /* _OQLog.m in Sources */,
 				5E6FBF641933CAB00084D5EE /* OQLocationCell.m in Sources */,
 				5E6FBF361933B9270084D5EE /* OQLocationTesting.xcdatamodeld in Sources */,
 				5E6FBF671933FF5F0084D5EE /* OQSendLocationsOperation.m in Sources */,
+				5EE3455C1934DBC500DDD261 /* OQLogsViewController.m in Sources */,
 				5E6FBF391933B9760084D5EE /* OQDataManager.m in Sources */,
+				5EE345681934DD2400DDD261 /* OQLogViewController.m in Sources */,
 				5EE345501934D2F600DDD261 /* OQNetworkManager.m in Sources */,
+				5EE345591934D68A00DDD261 /* OQLogManager.m in Sources */,
 				5E6FBF431933BA0E0084D5EE /* _OQLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

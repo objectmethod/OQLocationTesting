@@ -7,7 +7,7 @@
 
 + (instancetype) sharedInstance;
 
-- (void) login:(void (^)())success failure:(void (^)(NSError *error))failure;
-- (void) loginWithUsername:(NSString*)username password:(NSString*)password success:(void (^)())success failure:(void (^)(NSError *error))failure;
+- (void) authenticate:(void (^)())success failure:(void (^)(NSError *error))failure;
+- (void) authenticateWithUsername:(NSString*)username password:(NSString*)password success:(void (^)())success failure:(void (^)(NSError *error))failure;
 
 @end
