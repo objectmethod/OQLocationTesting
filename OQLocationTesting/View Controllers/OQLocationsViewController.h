@@ -1,3 +1,5 @@
-@interface OQLocationsViewController : UITableViewController
+#import "OQBaseTableViewController.h"
+
+@interface OQLocationsViewController : OQBaseTableViewController
 
 @end

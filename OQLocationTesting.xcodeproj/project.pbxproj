@@ -60,6 +60,7 @@
 		5EE345621934DBF000DDD261 /* OQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345601934DBF000DDD261 /* OQLog.m */; };
 		5EE345651934DC2500DDD261 /* OQLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345641934DC2500DDD261 /* OQLogCell.m */; };
 		5EE345681934DD2400DDD261 /* OQLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE345671934DD2400DDD261 /* OQLogViewController.m */; };
+		5EE3456B1935044E00DDD261 /* OQBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3456A1935044E00DDD261 /* OQBaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,8 @@
 		5EE345641934DC2500DDD261 /* OQLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogCell.m; sourceTree = "<group>"; };
 		5EE345661934DD2400DDD261 /* OQLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQLogViewController.h; sourceTree = "<group>"; };
 		5EE345671934DD2400DDD261 /* OQLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQLogViewController.m; sourceTree = "<group>"; };
+		5EE345691935044E00DDD261 /* OQBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQBaseTableViewController.h; sourceTree = "<group>"; };
+		5EE3456A1935044E00DDD261 /* OQBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQBaseTableViewController.m; sourceTree = "<group>"; };
 		6AE57D9C5FEA49DDA336ACEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB8A24196CC47F28666A158 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -304,6 +307,8 @@
 				5EE3455B1934DBC500DDD261 /* OQLogsViewController.m */,
 				5EE345661934DD2400DDD261 /* OQLogViewController.h */,
 				5EE345671934DD2400DDD261 /* OQLogViewController.m */,
+				5EE345691935044E00DDD261 /* OQBaseTableViewController.h */,
+				5EE3456A1935044E00DDD261 /* OQBaseTableViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE3456B1935044E00DDD261 /* OQBaseTableViewController.m in Sources */,
 				5EE345621934DBF000DDD261 /* OQLog.m in Sources */,
 				5E6FBF441933BA0E0084D5EE /* OQLocation.m in Sources */,
 				5E6FBF341933B9270084D5EE /* OQAppDelegate.m in Sources */,
