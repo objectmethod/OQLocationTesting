@@ -9,5 +9,6 @@
 
 - (void) authenticate:(void (^)())success failure:(void (^)(NSError *error))failure;
 - (void) authenticateWithUsername:(NSString*)username password:(NSString*)password success:(void (^)())success failure:(void (^)(NSError *error))failure;
+- (void) logout;
 
 @end

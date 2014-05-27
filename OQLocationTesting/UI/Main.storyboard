@@ -173,7 +173,13 @@
                             <outlet property="delegate" destination="LTQ-OV-bfx" id="J6A-i5-YxO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu" id="P6f-2f-s4Y"/>
+                    <navigationItem key="navigationItem" title="Menu" id="P6f-2f-s4Y">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="AYg-N0-QZx">
+                            <connections>
+                                <action selector="logout:" destination="LTQ-OV-bfx" id="ek8-ze-WeX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njN-Av-5A4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

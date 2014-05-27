@@ -41,4 +41,8 @@
     [self authenticate:success failure:failure];
 }
 
+- (void)logout {
+    [SSKeychain deletePasswordForService:OQ_APP_TITLE account:self.userID];
+}
+
 @end
