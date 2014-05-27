@@ -1,5 +1,5 @@
 #import "OQLoginViewController.h"
-#import "OQLoginController.h"
+#import "OQAuthenticationManager.h"
 #import "MBProgressHUD.h"
 #import "OQMapViewController.h"
 
@@ -23,7 +23,7 @@
     NSString *username = self.username.text;
     NSString *password = self.password.text;
     
-    [[OQLoginController sharedInstance] loginWithUsername:username password:password success:^() {
+    [[OQAuthenticationManager sharedInstance] loginWithUsername:username password:password success:^() {
         [self showMenu];
     } failure:^(NSError *error) {
         [[[UIAlertView alloc] initWithTitle:@"Error Logging In" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];

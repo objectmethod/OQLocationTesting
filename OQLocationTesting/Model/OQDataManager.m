@@ -61,6 +61,48 @@
     [self saveContext];
 }
 
+- (NSArray *)getAllObjectsForEntityForClass:(Class)class {
+    return [self getAllObjectsForEntityForClass:class predicate:nil];
+}
+
+- (NSArray *)getAllObjectsForEntityForClass:(Class)class predicate:(NSPredicate *)predicate {
+    return [self getAllObjectsForEntityForClass:class predicate:predicate maxNumberOfEntities:0];
+}
+
+- (NSArray *)getAllObjectsForEntityForClass:(Class)class predicate:(NSPredicate *)predicate maxNumberOfEntities:(NSUInteger)maxNumberOfEntities {
+    return [self getAllObjectsForEntityForClass:class predicate:predicate maxNumberOfEntities:maxNumberOfEntities sortDescriptors:nil];
+}
+
+- (NSArray *)getAllObjectsForEntityForClass:(Class)class predicate:(NSPredicate *)predicate maxNumberOfEntities:(NSUInteger)maxNumberOfEntities sortDescriptors:(NSArray *)sortDescriptors {
+    NSString *entityName = NSStringFromClass(class);
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:[NSEntityDescription entityForName:entityName inManagedObjectContext:self.managedObjectContext]];
+    
+    [request setIncludesSubentities:NO];
+    
+    if (predicate) {
+        request.predicate = predicate;
+    }
+    
+    if (maxNumberOfEntities > 0) {
+        request.fetchLimit = maxNumberOfEntities;
+    }
+    
+    if (sortDescriptors.count > 0) {
+        request.sortDescriptors = sortDescriptors;
+    }
+    
+    NSError *error;
+    NSArray *entities = [self.managedObjectContext executeFetchRequest:request error:&error];
+    
+    if (error) {
+        DLog(@"error executing fetch request: %@", error);
+    }
+    
+    return entities;
+}
+
 #pragma mark - Core Data stack
 
 // Returns the managed object context for the application.
@@ -101,9 +143,11 @@
     
     NSURL *storeURL = [[[OQAppProperties sharedInstance] applicationDocumentsDirectory] URLByAppendingPathComponent:@"OQLocationTesting.sqlite"];
     
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES};
+    
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

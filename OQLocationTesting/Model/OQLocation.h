@@ -4,4 +4,10 @@
 
 + (instancetype) locationWithLatitude:(float)latitude longitude:(float)longitude;
 
++ (NSArray*)allLocations;
++ (NSArray*)unsentLocations;
++ (OQLocation*) mostRecentLocation;
+
+- (void) markAsSent;
+
 @end

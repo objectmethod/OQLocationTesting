@@ -5,6 +5,7 @@
 
 
 extern const struct OQLocationAttributes {
+	__unsafe_unretained NSString *accuracy;
 	__unsafe_unretained NSString *created_at;
 	__unsafe_unretained NSString *latitude;
 	__unsafe_unretained NSString *longitude;
@@ -16,6 +17,7 @@ extern const struct OQLocationRelationships {
 
 extern const struct OQLocationFetchedProperties {
 } OQLocationFetchedProperties;
+
 
 
 
@@ -36,6 +38,20 @@ extern const struct OQLocationFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* accuracy;
+
+
+
+@property double accuracyValue;
+- (double)accuracyValue;
+- (void)setAccuracyValue:(double)value_;
+
+//- (BOOL)validateAccuracy:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSDate* created_at;
 
 
@@ -50,9 +66,9 @@ extern const struct OQLocationFetchedProperties {
 
 
 
-@property float latitudeValue;
-- (float)latitudeValue;
-- (void)setLatitudeValue:(float)value_;
+@property double latitudeValue;
+- (double)latitudeValue;
+- (void)setLatitudeValue:(double)value_;
 
 //- (BOOL)validateLatitude:(id*)value_ error:(NSError**)error_;
 
@@ -64,9 +80,9 @@ extern const struct OQLocationFetchedProperties {
 
 
 
-@property float longitudeValue;
-- (float)longitudeValue;
-- (void)setLongitudeValue:(float)value_;
+@property double longitudeValue;
+- (double)longitudeValue;
+- (void)setLongitudeValue:(double)value_;
 
 //- (BOOL)validateLongitude:(id*)value_ error:(NSError**)error_;
 
@@ -98,6 +114,15 @@ extern const struct OQLocationFetchedProperties {
 @interface _OQLocation (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSNumber*)primitiveAccuracy;
+- (void)setPrimitiveAccuracy:(NSNumber*)value;
+
+- (double)primitiveAccuracyValue;
+- (void)setPrimitiveAccuracyValue:(double)value_;
+
+
+
+
 - (NSDate*)primitiveCreated_at;
 - (void)setPrimitiveCreated_at:(NSDate*)value;
 
@@ -107,8 +132,8 @@ extern const struct OQLocationFetchedProperties {
 - (NSNumber*)primitiveLatitude;
 - (void)setPrimitiveLatitude:(NSNumber*)value;
 
-- (float)primitiveLatitudeValue;
-- (void)setPrimitiveLatitudeValue:(float)value_;
+- (double)primitiveLatitudeValue;
+- (void)setPrimitiveLatitudeValue:(double)value_;
 
 
 
@@ -116,8 +141,8 @@ extern const struct OQLocationFetchedProperties {
 - (NSNumber*)primitiveLongitude;
 - (void)setPrimitiveLongitude:(NSNumber*)value;
 
-- (float)primitiveLongitudeValue;
-- (void)setPrimitiveLongitudeValue:(float)value_;
+- (double)primitiveLongitudeValue;
+- (void)setPrimitiveLongitudeValue:(double)value_;
 
 
 

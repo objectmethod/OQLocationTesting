@@ -1,8 +1,9 @@
-@interface OQLoginController : NSObject
+@interface OQAuthenticationManager : NSObject
 
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *authenticationToken;
+@property (nonatomic, copy) NSString *userID;
 
 + (instancetype) sharedInstance;
 

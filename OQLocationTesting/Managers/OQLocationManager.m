@@ -24,22 +24,45 @@
     
     if (self) {
         if (self.locationServicesEnabled) {
-            self.locationManager = [[CLLocationManager alloc] init];
-            self.locationManager.pausesLocationUpdatesAutomatically = YES;
-            self.locationManager.activityType = CLActivityTypeOther;
-            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-            self.locationManager.distanceFilter = kCLDistanceFilterNone;
-            self.locationManager.delegate = self;
+            [self initializeLocationManager];
         }
     }
     
     return self;
 }
 
+- (void) initializeLocationManager {
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.pausesLocationUpdatesAutomatically = YES;
+    self.locationManager.activityType = CLActivityTypeOther;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.delegate = self;
+}
+
 - (void)startUpdatingLocation {
     if (self.locationServicesEnabled) {
         [self.locationManager startUpdatingLocation];
         self.isUpdatingLocation = YES;
+    }
+}
+
+#pragma mark - private
+
+- (void) saveLocations:(NSArray*)locations {
+    for (CLLocation *location in locations) {
+        float latitude = location.coordinate.latitude;
+        float longitude = location.coordinate.longitude;
+        [OQLocation locationWithLatitude:latitude longitude:longitude];
+    }
+    
+    [[OQDataManager sharedInstance] saveContext];
+}
+
+- (void) deferLocationUpdatesIfPossible {
+    if (self.canDeferLocationUpdates) {
+        DLog(@"Deferring location updates");
+        [self.locationManager allowDeferredLocationUpdatesUntilTraveled:OQ_DISTANCE_TO_DEFER_LOCATION_UPDATE_IN_METERS timeout:CLTimeIntervalMax];
     }
 }
 
@@ -60,18 +83,8 @@
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    for (CLLocation *location in locations) {
-        float latitude = location.coordinate.latitude;
-        float longitude = location.coordinate.longitude;
-        [OQLocation locationWithLatitude:latitude longitude:longitude];
-    }
-    
-    [[OQDataManager sharedInstance] saveContext];
-    
-    if (self.canDeferLocationUpdates) {
-        DLog(@"Deferring location updates");
-        [self.locationManager allowDeferredLocationUpdatesUntilTraveled:OQ_DISTANCE_TO_DEFER_LOCATION_UPDATE_IN_METERS timeout:CLTimeIntervalMax];
-    }
+    [self saveLocations:locations];
+    [self deferLocationUpdatesIfPossible];
 }
 
 - (void) locationManager:(CLLocationManager *)manager didFinishDeferredUpdatesWithError:(NSError *)error {

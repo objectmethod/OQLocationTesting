@@ -1,0 +1,3 @@
+@interface OQSendLocationsOperation : NSOperation
+
+@end

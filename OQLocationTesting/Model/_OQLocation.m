@@ -4,6 +4,7 @@
 #import "_OQLocation.h"
 
 const struct OQLocationAttributes OQLocationAttributes = {
+	.accuracy = @"accuracy",
 	.created_at = @"created_at",
 	.latitude = @"latitude",
 	.longitude = @"longitude",
@@ -42,6 +43,11 @@ const struct OQLocationFetchedProperties OQLocationFetchedProperties = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
+	if ([key isEqualToString:@"accuracyValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"accuracy"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 	if ([key isEqualToString:@"latitudeValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"latitude"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -64,6 +70,32 @@ const struct OQLocationFetchedProperties OQLocationFetchedProperties = {
 
 
 
+@dynamic accuracy;
+
+
+
+- (double)accuracyValue {
+	NSNumber *result = [self accuracy];
+	return [result doubleValue];
+}
+
+- (void)setAccuracyValue:(double)value_ {
+	[self setAccuracy:[NSNumber numberWithDouble:value_]];
+}
+
+- (double)primitiveAccuracyValue {
+	NSNumber *result = [self primitiveAccuracy];
+	return [result doubleValue];
+}
+
+- (void)setPrimitiveAccuracyValue:(double)value_ {
+	[self setPrimitiveAccuracy:[NSNumber numberWithDouble:value_]];
+}
+
+
+
+
+
 @dynamic created_at;
 
 
@@ -75,22 +107,22 @@ const struct OQLocationFetchedProperties OQLocationFetchedProperties = {
 
 
 
-- (float)latitudeValue {
+- (double)latitudeValue {
 	NSNumber *result = [self latitude];
-	return [result floatValue];
+	return [result doubleValue];
 }
 
-- (void)setLatitudeValue:(float)value_ {
-	[self setLatitude:[NSNumber numberWithFloat:value_]];
+- (void)setLatitudeValue:(double)value_ {
+	[self setLatitude:[NSNumber numberWithDouble:value_]];
 }
 
-- (float)primitiveLatitudeValue {
+- (double)primitiveLatitudeValue {
 	NSNumber *result = [self primitiveLatitude];
-	return [result floatValue];
+	return [result doubleValue];
 }
 
-- (void)setPrimitiveLatitudeValue:(float)value_ {
-	[self setPrimitiveLatitude:[NSNumber numberWithFloat:value_]];
+- (void)setPrimitiveLatitudeValue:(double)value_ {
+	[self setPrimitiveLatitude:[NSNumber numberWithDouble:value_]];
 }
 
 
@@ -101,22 +133,22 @@ const struct OQLocationFetchedProperties OQLocationFetchedProperties = {
 
 
 
-- (float)longitudeValue {
+- (double)longitudeValue {
 	NSNumber *result = [self longitude];
-	return [result floatValue];
+	return [result doubleValue];
 }
 
-- (void)setLongitudeValue:(float)value_ {
-	[self setLongitude:[NSNumber numberWithFloat:value_]];
+- (void)setLongitudeValue:(double)value_ {
+	[self setLongitude:[NSNumber numberWithDouble:value_]];
 }
 
-- (float)primitiveLongitudeValue {
+- (double)primitiveLongitudeValue {
 	NSNumber *result = [self primitiveLongitude];
-	return [result floatValue];
+	return [result doubleValue];
 }
 
-- (void)setPrimitiveLongitudeValue:(float)value_ {
-	[self setPrimitiveLongitude:[NSNumber numberWithFloat:value_]];
+- (void)setPrimitiveLongitudeValue:(double)value_ {
+	[self setPrimitiveLongitude:[NSNumber numberWithDouble:value_]];
 }
 
 
